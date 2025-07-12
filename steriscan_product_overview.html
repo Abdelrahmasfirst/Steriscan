@@ -1,0 +1,764 @@
+<html lang="fr">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   SteriScan Reconstruct 3D - Aperçu Produit
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+      font-family: 'Roboto', sans-serif;
+    }
+  </style>
+ </head>
+ <body class="bg-gray-50 text-gray-900">
+  <header class="bg-white shadow-md sticky top-0 z-50">
+   <div class="max-w-5xl mx-auto px-4 py-4 flex items-center justify-between">
+    <h1 class="text-xl font-bold text-blue-700">
+     SteriScan Reconstruct 3D
+    </h1>
+    <nav class="space-x-4 text-gray-700 hidden sm:flex">
+     <a class="hover:text-blue-600 font-semibold" href="#aperçu">
+      Aperçu
+     </a>
+     <a class="hover:text-blue-600 font-semibold" href="#specs">
+      Spécifications
+     </a>
+     <a class="hover:text-blue-600 font-semibold" href="#flux">
+      Flux Fonctionnels
+     </a>
+     <a class="hover:text-blue-600 font-semibold" href="#uiux">
+      Interface
+     </a>
+     <a class="hover:text-blue-600 font-semibold" href="#algos">
+      Algorithmes
+     </a>
+     <a class="hover:text-blue-600 font-semibold" href="#db">
+      Base de Données
+     </a>
+     <a class="hover:text-blue-600 font-semibold" href="#samsung">
+      Samsung A12
+     </a>
+     <a class="hover:text-blue-600 font-semibold" href="#perf">
+      Performance
+     </a>
+     <a class="hover:text-blue-600 font-semibold" href="#validation">
+      Validation
+     </a>
+     <a class="hover:text-blue-600 font-semibold" href="#roadmap">
+      Roadmap
+     </a>
+     <a class="hover:text-blue-600 font-semibold" href="#screenshots">
+      Captures
+     </a>
+    </nav>
+    <button class="sm:hidden text-gray-700 focus:outline-none" id="menu-btn">
+     <i class="fas fa-bars fa-lg">
+     </i>
+    </button>
+   </div>
+   <nav class="sm:hidden hidden bg-white border-t border-gray-200" id="mobile-menu">
+    <a class="block px-4 py-3 border-b border-gray-200 hover:bg-blue-50" href="#aperçu">
+     Aperçu
+    </a>
+    <a class="block px-4 py-3 border-b border-gray-200 hover:bg-blue-50" href="#specs">
+     Spécifications
+    </a>
+    <a class="block px-4 py-3 border-b border-gray-200 hover:bg-blue-50" href="#flux">
+     Flux Fonctionnels
+    </a>
+    <a class="block px-4 py-3 border-b border-gray-200 hover:bg-blue-50" href="#uiux">
+     Interface
+    </a>
+    <a class="block px-4 py-3 border-b border-gray-200 hover:bg-blue-50" href="#algos">
+     Algorithmes
+    </a>
+    <a class="block px-4 py-3 border-b border-gray-200 hover:bg-blue-50" href="#db">
+     Base de Données
+    </a>
+    <a class="block px-4 py-3 border-b border-gray-200 hover:bg-blue-50" href="#samsung">
+     Samsung A12
+    </a>
+    <a class="block px-4 py-3 border-b border-gray-200 hover:bg-blue-50" href="#perf">
+     Performance
+    </a>
+    <a class="block px-4 py-3 border-b border-gray-200 hover:bg-blue-50" href="#validation">
+     Validation
+    </a>
+    <a class="block px-4 py-3 border-b border-gray-200 hover:bg-blue-50" href="#roadmap">
+     Roadmap
+    </a>
+    <a class="block px-4 py-3 hover:bg-blue-50" href="#screenshots">
+     Captures
+    </a>
+   </nav>
+  </header>
+  <main class="max-w-5xl mx-auto px-4 py-8 space-y-12">
+   <!-- 1. Aperçu du Produit -->
+   <section class="bg-white rounded-lg shadow p-6" id="aperçu">
+    <h2 class="text-2xl font-bold text-blue-700 mb-4">
+     1. Aperçu du Produit
+    </h2>
+    <div class="space-y-4">
+     <p>
+      <span class="font-semibold">
+       Nom de l'application :
+      </span>
+      SteriScan Reconstruct 3D
+     </p>
+     <p>
+      <span class="font-semibold">
+       Public cible :
+      </span>
+     </p>
+     <ul class="list-disc list-inside ml-4 space-y-1">
+      <li>
+       Personnel médical (stérilisation, bloc opératoire)
+      </li>
+      <li>
+       Techniciens biomédicaux
+      </li>
+      <li>
+       Gestionnaires de stocks hospitaliers
+      </li>
+     </ul>
+     <p>
+      <span class="font-semibold">
+       Objectifs principaux :
+      </span>
+     </p>
+     <ol class="list-decimal list-inside ml-4 space-y-1">
+      <li>
+       Scanner et identifier des instruments chirurgicaux en 3D
+      </li>
+      <li>
+       Comparer les scans avec une base de données de référence
+      </li>
+      <li>
+       Reconstituer des kits chirurgicaux complets
+      </li>
+      <li>
+       Fonctionner hors ligne sur appareils mid-range
+      </li>
+     </ol>
+    </div>
+   </section>
+   <!-- 2. Spécifications Techniques -->
+   <section class="bg-white rounded-lg shadow p-6 overflow-x-auto" id="specs">
+    <h2 class="text-2xl font-bold text-blue-700 mb-4">
+     2. Spécifications Techniques (Optimisées Samsung A12)
+    </h2>
+    <table class="w-full text-left border-collapse border border-gray-300">
+     <thead class="bg-blue-100">
+      <tr>
+       <th class="border border-gray-300 px-4 py-2">
+        Composant
+       </th>
+       <th class="border border-gray-300 px-4 py-2">
+        Spécification
+       </th>
+      </tr>
+     </thead>
+     <tbody>
+      <tr class="even:bg-gray-50">
+       <td class="border border-gray-300 px-4 py-2 font-semibold">
+        OS minimum
+       </td>
+       <td class="border border-gray-300 px-4 py-2">
+        Android 10 (Go Edition compatible)
+       </td>
+      </tr>
+      <tr class="even:bg-gray-50">
+       <td class="border border-gray-300 px-4 py-2 font-semibold">
+        RAM minimale
+       </td>
+       <td class="border border-gray-300 px-4 py-2">
+        3 GB
+       </td>
+      </tr>
+      <tr class="even:bg-gray-50">
+       <td class="border border-gray-300 px-4 py-2 font-semibold">
+        Capteurs requis
+       </td>
+       <td class="border border-gray-300 px-4 py-2">
+        Caméra principale + Capteur de profondeur (optionnel)
+       </td>
+      </tr>
+      <tr class="even:bg-gray-50">
+       <td class="border border-gray-300 px-4 py-2 font-semibold">
+        Taille application
+       </td>
+       <td class="border border-gray-300 px-4 py-2">
+        ≤ 50 MB (hors base de données)
+       </td>
+      </tr>
+      <tr class="even:bg-gray-50">
+       <td class="border border-gray-300 px-4 py-2 font-semibold">
+        Connectivité
+       </td>
+       <td class="border border-gray-300 px-4 py-2">
+        Fonctionnement hors ligne (SQLite embarqué)
+       </td>
+      </tr>
+      <tr class="even:bg-gray-50">
+       <td class="border border-gray-300 px-4 py-2 font-semibold">
+        Librairies clés
+       </td>
+       <td class="border border-gray-300 px-4 py-2">
+        ARCore 1.35 (mode léger), TensorFlow Lite 2.10
+       </td>
+      </tr>
+     </tbody>
+    </table>
+   </section>
+   <!-- 3. Flux Fonctionnels -->
+   <section class="bg-white rounded-lg shadow p-6 space-y-8" id="flux">
+    <h2 class="text-2xl font-bold text-blue-700 mb-4">
+     3. Flux Fonctionnels
+    </h2>
+    <article>
+     <h3 class="text-xl font-semibold text-blue-600 mb-2">
+      3.1 Scan 3D d'Instrument
+     </h3>
+     <div class="overflow-x-auto">
+      <svg aria-label="Diagramme de flux Scan 3D d'Instrument" height="280" role="img" viewbox="0 0 600 280" width="100%" xmlns="http://www.w3.org/2000/svg">
+       <defs>
+        <marker id="arrow" markerheight="10" markerunits="strokeWidth" markerwidth="10" orient="auto" refx="6" refy="5">
+         <path d="M0,0 L10,5 L0,10 L2,5 z" fill="#2563eb">
+         </path>
+        </marker>
+       </defs>
+       <rect fill="#3b82f6" fill-opacity="0.1" height="40" rx="8" ry="8" stroke="#2563eb" stroke-width="2" width="140" x="20" y="20">
+       </rect>
+       <text fill="#2563eb" font-family="Roboto, sans-serif" font-size="14" font-weight="700" text-anchor="middle" x="90" y="45">
+        Démarrer le scan
+       </text>
+       <rect fill="#3b82f6" fill-opacity="0.1" height="40" rx="8" ry="8" stroke="#2563eb" stroke-width="2" width="180" x="200" y="20">
+       </rect>
+       <text fill="#2563eb" font-family="Roboto, sans-serif" font-size="14" font-weight="700" text-anchor="middle" x="290" y="45">
+        Positionnement automatique
+       </text>
+       <rect fill="#3b82f6" fill-opacity="0.1" height="40" rx="8" ry="8" stroke="#2563eb" stroke-width="2" width="140" x="420" y="10">
+       </rect>
+       <text fill="#2563eb" font-family="Roboto, sans-serif" font-size="14" font-weight="700" text-anchor="middle" x="490" y="35">
+        Capture des points 3D
+       </text>
+       <rect fill="#f87171" fill-opacity="0.1" height="40" rx="8" ry="8" stroke="#dc2626" stroke-width="2" width="140" x="420" y="80">
+       </rect>
+       <text fill="#dc2626" font-family="Roboto, sans-serif" font-size="14" font-weight="700" text-anchor="middle" x="490" y="105">
+        Guide manuel
+       </text>
+       <rect fill="#3b82f6" fill-opacity="0.1" height="40" rx="8" ry="8" stroke="#2563eb" stroke-width="2" width="180" x="420" y="150">
+       </rect>
+       <text fill="#2563eb" font-family="Roboto, sans-serif" font-size="14" font-weight="700" text-anchor="middle" x="510" y="175">
+        Reconstruction MIP simplifiée
+       </text>
+       <rect fill="#3b82f6" fill-opacity="0.1" height="40" rx="8" ry="8" stroke="#2563eb" stroke-width="2" width="180" x="420" y="220">
+       </rect>
+       <text fill="#2563eb" font-family="Roboto, sans-serif" font-size="14" font-weight="700" text-anchor="middle" x="510" y="245">
+        Génération nuage de points
+       </text>
+       <rect fill="#3b82f6" fill-opacity="0.1" height="40" rx="8" ry="8" stroke="#2563eb" stroke-width="2" width="180" x="420" y="290">
+       </rect>
+       <text fill="#2563eb" font-family="Roboto, sans-serif" font-size="14" font-weight="700" text-anchor="middle" x="510" y="315">
+        Identification automatique
+       </text>
+       <!-- Arrows -->
+       <line marker-end="url(#arrow)" stroke="#2563eb" stroke-width="2" x1="160" x2="200" y1="40" y2="40">
+       </line>
+       <line marker-end="url(#arrow)" stroke="#2563eb" stroke-width="2" x1="380" x2="420" y1="40" y2="40">
+       </line>
+       <line marker-end="url(#arrow)" stroke="#2563eb" stroke-width="2" x1="290" x2="290" y1="60" y2="80">
+       </line>
+       <line marker-end="url(#arrow)" stroke="#dc2626" stroke-width="2" x1="560" x2="560" y1="50" y2="80">
+       </line>
+       <line marker-end="url(#arrow)" stroke="#2563eb" stroke-width="2" x1="560" x2="560" y1="120" y2="150">
+       </line>
+       <line marker-end="url(#arrow)" stroke="#2563eb" stroke-width="2" x1="600" x2="600" y1="170" y2="220">
+       </line>
+       <line marker-end="url(#arrow)" stroke="#2563eb" stroke-width="2" x1="600" x2="600" y1="260" y2="290">
+       </line>
+      </svg>
+     </div>
+    </article>
+    <article>
+     <h3 class="text-xl font-semibold text-blue-600 mb-2">
+      3.2 Reconnaissance par Base de Référence
+     </h3>
+     <div class="overflow-x-auto">
+      <svg aria-label="Diagramme de flux Reconnaissance par Base de Référence" height="200" role="img" viewbox="0 0 600 200" width="100%" xmlns="http://www.w3.org/2000/svg">
+       <defs>
+        <marker id="arrow2" markerheight="10" markerunits="strokeWidth" markerwidth="10" orient="auto" refx="6" refy="5">
+         <path d="M0,0 L10,5 L0,10 L2,5 z" fill="#2563eb">
+         </path>
+        </marker>
+       </defs>
+       <rect fill="#3b82f6" fill-opacity="0.1" height="40" rx="8" ry="8" stroke="#2563eb" stroke-width="2" width="140" x="20" y="80">
+       </rect>
+       <text fill="#2563eb" font-family="Roboto, sans-serif" font-size="14" font-weight="700" text-anchor="middle" x="90" y="105">
+        Photo instrument
+       </text>
+       <rect fill="#3b82f6" fill-opacity="0.1" height="80" rx="8" ry="8" stroke="#2563eb" stroke-width="2" width="140" x="200" y="40">
+       </rect>
+       <text fill="#2563eb" font-family="Roboto, sans-serif" font-size="14" font-weight="700" text-anchor="middle" x="270" y="85">
+        Appariement IA
+       </text>
+       <rect fill="#3b82f6" fill-opacity="0.1" height="40" rx="8" ry="8" stroke="#2563eb" stroke-width="2" width="140" x="380" y="10">
+       </rect>
+       <text fill="#2563eb" font-family="Roboto, sans-serif" font-size="14" font-weight="700" text-anchor="middle" x="450" y="35">
+        Fiche technique 3D
+       </text>
+       <rect fill="#fbbf24" fill-opacity="0.1" height="40" rx="8" ry="8" stroke="#b45309" stroke-width="2" width="140" x="380" y="110">
+       </rect>
+       <text fill="#b45309" font-family="Roboto, sans-serif" font-size="14" font-weight="700" text-anchor="middle" x="450" y="135">
+        Proposition similaire
+       </text>
+       <rect fill="#3b82f6" fill-opacity="0.1" height="40" rx="8" ry="8" stroke="#2563eb" stroke-width="2" width="140" x="560" y="60">
+       </rect>
+       <text fill="#2563eb" font-family="Roboto, sans-serif" font-size="14" font-weight="700" text-anchor="middle" x="630" y="85">
+        Intégration au kit
+       </text>
+       <!-- Arrows -->
+       <line marker-end="url(#arrow2)" stroke="#2563eb" stroke-width="2" x1="160" x2="200" y1="100" y2="100">
+       </line>
+       <line marker-end="url(#arrow2)" stroke="#2563eb" stroke-width="2" x1="340" x2="380" y1="60" y2="60">
+       </line>
+       <line marker-end="url(#arrow2)" stroke="#2563eb" stroke-width="2" x1="340" x2="380" y1="100" y2="130">
+       </line>
+       <line marker-end="url(#arrow2)" stroke="#2563eb" stroke-width="2" x1="520" x2="560" y1="30" y2="80">
+       </line>
+       <line marker-end="url(#arrow2)" stroke="#b45309" stroke-width="2" x1="520" x2="560" y1="130" y2="80">
+       </line>
+      </svg>
+     </div>
+    </article>
+   </section>
+   <!-- 4. Interface Utilisateur (UI/UX) -->
+   <section class="bg-white rounded-lg shadow p-6" id="uiux">
+    <h2 class="text-2xl font-bold text-blue-700 mb-4">
+     4. Interface Utilisateur (UI/UX)
+    </h2>
+    <div class="space-y-6">
+     <article>
+      <h3 class="text-xl font-semibold text-blue-600 mb-2">
+       Écrans principaux
+      </h3>
+      <ol class="list-decimal list-inside ml-4 space-y-3">
+       <li>
+        <strong>
+         Accueil :
+        </strong>
+        <ul class="list-disc list-inside ml-6 space-y-1">
+         <li>
+          Bouton scan 3D central
+         </li>
+         <li>
+          Accès rapide aux derniers kits
+         </li>
+        </ul>
+       </li>
+       <li>
+        <strong>
+         Scanner 3D :
+        </strong>
+        <ul class="list-disc list-inside ml-6 space-y-1">
+         <li>
+          Guide de positionnement holographique
+         </li>
+         <li>
+          Feedback visuel de densité de points
+         </li>
+         <li>
+          Mode économie batterie (≤ 60s/scan)
+         </li>
+        </ul>
+       </li>
+       <li>
+        <strong>
+         Base de Connaissance :
+        </strong>
+        <ul class="list-disc list-inside ml-6 space-y-1">
+         <li>
+          Catalogue d'instruments classés par spécialité
+         </li>
+         <li>
+          Fiches techniques interactives (rotation 3D)
+         </li>
+        </ul>
+       </li>
+       <li>
+        <strong>
+         Reconstitution de Kit :
+        </strong>
+        <ul class="list-disc list-inside ml-6 space-y-1">
+         <li>
+          Diagramme de complétion visuelle
+         </li>
+         <li>
+          Liste des manquants/superflus
+         </li>
+        </ul>
+       </li>
+      </ol>
+     </article>
+    </div>
+   </section>
+   <!-- 5. Algorithmes Clés -->
+   <section class="bg-white rounded-lg shadow p-6 space-y-8" id="algos">
+    <h2 class="text-2xl font-bold text-blue-700 mb-4">
+     5. Algorithmes Clés (Optimisés mid-range)
+    </h2>
+    <article>
+     <h3 class="text-xl font-semibold text-blue-600 mb-2">
+      Traitement MIP allégé
+     </h3>
+     <pre class="bg-gray-100 rounded p-4 overflow-x-auto text-sm font-mono text-gray-800">
+def generate_mip_lite(point_cloud):
+    # Réduction à 15 000 points max
+    downsampled = voxel_downsample(point_cloud, voxel_size=0.8)  
+    
+    # Projection orthographique
+    projections = []
+    for axis in ['x', 'y', 'z']:
+        proj = orthographic_project(downsampled, axis)
+        # Palette de couleurs adaptative
+        proj = apply_color_map(proj, 'viridis')  
+        projections.append(proj)
+    
+    return projections
+        </pre>
+    </article>
+    <article>
+     <h3 class="text-xl font-semibold text-blue-600 mb-2">
+      Matching 3D
+     </h3>
+     <pre class="bg-gray-100 rounded p-4 overflow-x-auto text-sm font-mono text-gray-800">
+// Algorithme ICP simplifié (C++/NDK)
+float matchInstrument(PointCloud target, PointCloud reference) {
+  float max_iterations = 20; // Limit for mid-range
+  float threshold = 0.05f; 
+  float fitness_score = 0.0f;
+  
+  for (int i = 0; i &lt; max_iterations; ++i) {
+    // Phase d'appariement
+    auto correspondences = findCorrespondences(target, reference);
+    
+    // Phase de minimisation
+    Eigen::Matrix4f transform = computeTransform(correspondences);
+    
+    // Application transformation
+    target = transformPointCloud(target, transform);
+    
+    // Calcul score
+    fitness_score = computeFitness(correspondences, threshold);
+    if (fitness_score &gt; 0.85f) break;
+  }
+  return fitness_score;
+}
+        </pre>
+    </article>
+   </section>
+   <!-- 6. Base de Données Embarquée -->
+   <section class="bg-white rounded-lg shadow p-6 overflow-x-auto" id="db">
+    <h2 class="text-2xl font-bold text-blue-700 mb-4">
+     6. Base de Données Embarquée
+    </h2>
+    <table class="w-full text-left border-collapse border border-gray-300">
+     <thead class="bg-blue-100">
+      <tr>
+       <th class="border border-gray-300 px-4 py-2">
+        Table
+       </th>
+       <th class="border border-gray-300 px-4 py-2">
+        Description
+       </th>
+       <th class="border border-gray-300 px-4 py-2">
+        Taille estimée
+       </th>
+      </tr>
+     </thead>
+     <tbody>
+      <tr class="even:bg-gray-50">
+       <td class="border border-gray-300 px-4 py-2 font-semibold">
+        instruments
+       </td>
+       <td class="border border-gray-300 px-4 py-2">
+        200 instruments de base + custom
+       </td>
+       <td class="border border-gray-300 px-4 py-2">
+        15 MB
+       </td>
+      </tr>
+      <tr class="even:bg-gray-50">
+       <td class="border border-gray-300 px-4 py-2 font-semibold">
+        kits
+       </td>
+       <td class="border border-gray-300 px-4 py-2">
+        Configurations pré-enregistrées
+       </td>
+       <td class="border border-gray-300 px-4 py-2">
+        5 MB
+       </td>
+      </tr>
+      <tr class="even:bg-gray-50">
+       <td class="border border-gray-300 px-4 py-2 font-semibold">
+        scans
+       </td>
+       <td class="border border-gray-300 px-4 py-2">
+        Nuages de points compressés (.lz4)
+       </td>
+       <td class="border border-gray-300 px-4 py-2">
+        2 MB/scan
+       </td>
+      </tr>
+      <tr class="even:bg-gray-50">
+       <td class="border border-gray-300 px-4 py-2 font-semibold">
+        match_patterns
+       </td>
+       <td class="border border-gray-300 px-4 py-2">
+        Signatures 3D pour reconnaissance
+       </td>
+       <td class="border border-gray-300 px-4 py-2">
+        10 MB
+       </td>
+      </tr>
+     </tbody>
+    </table>
+   </section>
+   <!-- 7. Spécificités Samsung A12 -->
+   <section class="bg-white rounded-lg shadow p-6 space-y-6" id="samsung">
+    <h2 class="text-2xl font-bold text-blue-700 mb-4">
+     7. Spécificités Samsung A12
+    </h2>
+    <article>
+     <h3 class="text-xl font-semibold text-blue-600 mb-2">
+      Optimisation mémoire
+     </h3>
+     <ul class="list-disc list-inside ml-6 space-y-1">
+      <li>
+       Limite de 15 000 points par scan
+      </li>
+      <li>
+       Pré-allocation des buffers graphiques
+      </li>
+     </ul>
+    </article>
+    <article>
+     <h3 class="text-xl font-semibold text-blue-600 mb-2">
+      Gestion thermique
+     </h3>
+     <ul class="list-disc list-inside ml-6 space-y-1">
+      <li>
+       Désactivation ARCore si T° &gt; 45°C
+      </li>
+      <li>
+       Réduction FPS automatique (15 → 10 FPS)
+      </li>
+     </ul>
+    </article>
+    <article>
+     <h3 class="text-xl font-semibold text-blue-600 mb-2">
+      Adaptation CPU
+     </h3>
+     <pre class="bg-gray-100 rounded p-4 overflow-x-auto text-sm font-mono text-gray-800">
+void configurePerformance() {
+    if (Build.MODEL.contains("A12")) {
+        ARCoreConfig.setProcessingMode(LOW_POWER);
+        PointCloudProcessor.setDetailLevel(MEDIUM);
+    }
+}
+        </pre>
+    </article>
+   </section>
+   <!-- 8. Métriques de Performance -->
+   <section class="bg-white rounded-lg shadow p-6 overflow-x-auto" id="perf">
+    <h2 class="text-2xl font-bold text-blue-700 mb-4">
+     8. Métriques de Performance
+    </h2>
+    <table class="w-full text-left border-collapse border border-gray-300">
+     <thead class="bg-blue-100">
+      <tr>
+       <th class="border border-gray-300 px-4 py-2">
+        Scénario
+       </th>
+       <th class="border border-gray-300 px-4 py-2">
+        Cible Samsung A12
+       </th>
+      </tr>
+     </thead>
+     <tbody>
+      <tr class="even:bg-gray-50">
+       <td class="border border-gray-300 px-4 py-2 font-semibold">
+        Lancement application
+       </td>
+       <td class="border border-gray-300 px-4 py-2">
+        ≤ 3s
+       </td>
+      </tr>
+      <tr class="even:bg-gray-50">
+       <td class="border border-gray-300 px-4 py-2 font-semibold">
+        Initialisation scanner 3D
+       </td>
+       <td class="border border-gray-300 px-4 py-2">
+        ≤ 5s
+       </td>
+      </tr>
+      <tr class="even:bg-gray-50">
+       <td class="border border-gray-300 px-4 py-2 font-semibold">
+        Traitement scan moyen
+       </td>
+       <td class="border border-gray-300 px-4 py-2">
+        ≤ 8s
+       </td>
+      </tr>
+      <tr class="even:bg-gray-50">
+       <td class="border border-gray-300 px-4 py-2 font-semibold">
+        Reconnaissance instrument
+       </td>
+       <td class="border border-gray-300 px-4 py-2">
+        ≤ 3s
+       </td>
+      </tr>
+      <tr class="even:bg-gray-50">
+       <td class="border border-gray-300 px-4 py-2 font-semibold">
+        Consommation batterie
+       </td>
+       <td class="border border-gray-300 px-4 py-2">
+        ≤ 15%/h d'usage intensif
+       </td>
+      </tr>
+     </tbody>
+    </table>
+   </section>
+   <!-- 9. Validation Médicale -->
+   <section class="bg-white rounded-lg shadow p-6" id="validation">
+    <h2 class="text-2xl font-bold text-blue-700 mb-4">
+     9. Validation Médicale
+    </h2>
+    <ul class="list-disc list-inside ml-6 space-y-2">
+     <li>
+      <strong>
+       Précision minimale :
+      </strong>
+      92% sur instruments non-occlus
+     </li>
+     <li>
+      <strong>
+       Taux de faux positifs :
+      </strong>
+      &lt; 5%
+     </li>
+     <li>
+      <strong>
+       Certifications :
+      </strong>
+      <ul class="list-disc list-inside ml-6 space-y-1">
+       <li>
+        Classe I FDA (dispositif médical accessoire)
+       </li>
+       <li>
+        RGPD médical (hébergement données FR)
+       </li>
+      </ul>
+     </li>
+    </ul>
+   </section>
+   <!-- 10. Feuille de Route -->
+   <section class="bg-white rounded-lg shadow p-6 overflow-x-auto" id="roadmap">
+    <h2 class="text-2xl font-bold text-blue-700 mb-4">
+     10. Feuille de Route
+    </h2>
+    <table class="w-full text-left border-collapse border border-gray-300">
+     <thead class="bg-blue-100">
+      <tr>
+       <th class="border border-gray-300 px-4 py-2">
+        Version
+       </th>
+       <th class="border border-gray-300 px-4 py-2">
+        Fonctionnalités
+       </th>
+       <th class="border border-gray-300 px-4 py-2">
+        Date cible
+       </th>
+      </tr>
+     </thead>
+     <tbody>
+      <tr class="even:bg-gray-50">
+       <td class="border border-gray-300 px-4 py-2 font-semibold">
+        1.0
+       </td>
+       <td class="border border-gray-300 px-4 py-2">
+        Scan 3D + Base de référence
+       </td>
+       <td class="border border-gray-300 px-4 py-2">
+        Q3 2024
+       </td>
+      </tr>
+      <tr class="even:bg-gray-50">
+       <td class="border border-gray-300 px-4 py-2 font-semibold">
+        1.5
+       </td>
+       <td class="border border-gray-300 px-4 py-2">
+        Mode kit + Export PDF
+       </td>
+       <td class="border border-gray-300 px-4 py-2">
+        Q4 2024
+       </td>
+      </tr>
+      <tr class="even:bg-gray-50">
+       <td class="border border-gray-300 px-4 py-2 font-semibold">
+        2.0
+       </td>
+       <td class="border border-gray-300 px-4 py-2">
+        Intégration LIDAR (appareils premium)
+       </td>
+       <td class="border border-gray-300 px-4 py-2">
+        Q1 2025
+       </td>
+      </tr>
+     </tbody>
+    </table>
+   </section>
+   <!-- Annexe : Captures d'écran conceptuelles -->
+   <section class="bg-white rounded-lg shadow p-6 space-y-6" id="screenshots">
+    <h2 class="text-2xl font-bold text-blue-700 mb-4">
+     Annexe : Captures d'écran conceptuelles
+    </h2>
+    <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+     <figure class="flex flex-col items-center">
+      <img alt="Interface Scan 3D montrant un guide holographique bleu et un nuage de points 3D en surimpression sur un instrument chirurgical" class="rounded-lg shadow-md w-full max-w-xs" height="600" loading="lazy" src="https://storage.googleapis.com/a1aa/image/5d8f1a2d-d9f7-4af0-36b7-da958badf919.jpg" width="300"/>
+      <figcaption class="mt-2 text-center text-gray-600 text-sm">
+       Interface Scan 3D
+      </figcaption>
+     </figure>
+     <figure class="flex flex-col items-center">
+      <img alt="Fiche technique 3D interactive montrant un instrument chirurgical en rotation avec annotations et détails techniques" class="rounded-lg shadow-md w-full max-w-xs" height="600" loading="lazy" src="https://storage.googleapis.com/a1aa/image/b916a86c-ffcd-4a02-510a-cf2e040c188a.jpg" width="300"/>
+      <figcaption class="mt-2 text-center text-gray-600 text-sm">
+       Fiche instrument
+      </figcaption>
+     </figure>
+     <figure class="flex-flex-col items-center">
+      <img alt="Mode comparaison affichant côte à côte un scan 3D d'instrument et sa référence dans la base de données avec indicateurs visuels de similarité" class="rounded-lg shadow-md w-full max-w-xs" height="600" loading="lazy" src="https://storage.googleapis.com/a1aa/image/61d485e7-95a8-4340-4d32-5b6019cdb7bb.jpg" width="300"/>
+      <figcaption class="mt-2 text-center text-gray-600 text-sm">
+       Mode Comparaison
+      </figcaption>
+     </figure>
+    </div>
+   </section>
+  </main>
+  <footer class="bg-white border-t border-gray-200 mt-12 py-6 text-center text-gray-600 text-sm">
+   © 2024 SteriScan Reconstruct 3D - Tous droits réservés
+  </footer>
+  <script>
+   const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+ </body>
+</html>
