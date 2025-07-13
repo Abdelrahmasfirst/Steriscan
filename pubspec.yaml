@@ -1,0 +1,68 @@
+name: steriscan_3d
+description: Application mobile pour scanner et identifier des instruments chirurgicaux en 3D
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  # UI & Navigation
+  cupertino_icons: ^1.0.6
+  flutter_svg: ^2.0.9
+  cached_network_image: ^3.3.0
+  
+  # State Management
+  provider: ^6.1.1
+  
+  # Local Storage
+  sqflite: ^2.3.0
+  shared_preferences: ^2.2.2
+  path_provider: ^2.1.1
+  
+  # 3D & AR
+  arcore_flutter_plugin: ^0.0.10
+  camera: ^0.10.5+5
+  sensors_plus: ^4.0.2
+  
+  # Networking & API
+  http: ^1.1.0
+  dio: ^5.3.2
+  
+  # Permissions
+  permission_handler: ^11.0.1
+  
+  # File handling
+  pdf: ^3.10.7
+  path: ^1.8.3
+  
+  # Utils
+  uuid: ^4.1.0
+  intl: ^0.18.1
+  battery_plus: ^5.0.2
+  device_info_plus: ^9.1.1
+  package_info_plus: ^4.2.0
+  
+  # Security
+  crypto: ^3.0.3
+  encrypt: ^5.0.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.1
+  mockito: ^5.4.2
+  build_runner: ^2.4.7
+  json_annotation: ^4.8.1
+  integration_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/icons/
+    - assets/images/
+    - assets/models/
+    - assets/data/
